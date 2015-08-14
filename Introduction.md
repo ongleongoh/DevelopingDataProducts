@@ -1,23 +1,16 @@
-## Description
+## Introduction
 
-Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres.
+This project is to write a shiny application with associated supporting documentation to predict the species of an iris using the measurements.
 
-* <b>Dataset</b>: Edgar Anderson's Iris Data
 
+## Documentation
+There are 6 tap above namely "Introduction", "more", "k mean", "Table", "Random Forest" and "About" tabs.
 <ol>
-<li><b>Sepal.Length</b>: Length in centimetres </li>
-<li><b>Sepal.Width</b>: Width in centimetres </li>
-<li><b>Petal.Length</b>: Length in centimetres </li>
-<li><b>Petal.Width</b>: Width in centimetres </li>
-<li><b>Species</b>: Iris setosa, Iris virginica and Iris versicolor </li>
+<li><b>Introduction</b>: An introduction to iris prediction model and user guide. </li>
+<li><b>more</b>: To display iris data structure or data summary</li>
+<li><b>k mean</b>: A k mean and scatter plot comparison. </li>
+<li><b>Table</b>: iris dataset table </li>
+<li><b>Random Forest</b>: Shiny application to predict and generate the R code. </li>
 </ol>
 
-## Source
-
-Fisher, R. A. (1936) The use of multiple measurements in taxonomic problems. Annals of Eugenics, 7, Part II, 179–188.
-
-The data were collected by Anderson, Edgar (1935). The irises of the Gaspe Peninsula, Bulletin of the American Iris Society, 59, 2–5.
-
-## References
-
-Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988) The New S Language. Wadsworth & Brooks/Cole. (has iris3 as iris.)
+More user guide are availble in the "k mean" and Random Forest" tabs.
