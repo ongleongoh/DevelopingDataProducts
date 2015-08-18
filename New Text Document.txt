@@ -1,0 +1,46 @@
+Developing Data Products Project - LEGO Sets Visualization
+This Shiny App is for searching and visulizating LEGO Sets information.
+The dataset is from Rebrickable.com that contains the basic information of each set (set id, year, number of pieces, theme, set name).
+Data Source: http://rebrickable.com/downloads
+Note: Since I didn't use the API to collect data, the current data might not be 100% accurate.
+
+The project is on Shiny User Showcase page (Shiny Apps with popular appeal): https://gallery.shinyapps.io/lego-viz. It can also be found here: https://xiaodan.shinyapps.io/LegoSetViz.
+
+
+
+
+# page2
+Project Goals
+
+Typing on mobile devices is not a very convenient activity due to increasingly larger device sizes and lack of physical keys.
+
+The Swiftkey Text Prediction project tries to predict the next word the user is likely to type based on common language usage patterns. The project has the following features:
+
+Simple and intuitive UI that automatically predicts the next word user is likely to type
+Small memory footprint resulting in fast load times and nimble performance
+Currently works in English, but easily extensible to other languages
+How to use
+
+#Page3
+The project website is located here
+
+The algorithm starts predicting as soon as a new word is typed.
+Between 1 and 9 new words predicted everytime the user hits space
+checkbox allows user to filter out profanity being predicted
+Table creation Algorithm
+
+# page4
+Around 60 MB of english text corpus from blogs, news and twitter data was used to create 1-gram, 2-gram, 3-gram and 4-gram Frequency tables.
+The tables were reformatted in key-value dictionary, so that for an n-gram table would now comprise of a n-1 key-phrase and 3 nth word values and their frequency in corpus. Final combined table size was around 4.4MB.
+There is no unigram table, since we only use the word “the”, which happens to be the most popular word.
+Another table was created for profanities from a corpus found on the web (2KB)
+Prediction Algorithm
+
+# page5
+The shiny app loads all tables as soon as the website is loaded
+The 4-gram, 3-gram and 2-gram are assigned weights of 270, 25 and 1 respectively. These weights are somewhat arbitrary currently, but ideally a machine learning algorithm can be used here.
+As a user types a phrase, the last 3, 2 and 1 words are used to consult the 4, 3 and 2-gram table and predict the next likely words. The ordering of the predicted words is determined by relative frequency times table weight.
+If no words are found in any tables, the word “the” is predicted.
+If the predicted word is a profanity, its filtered out if profanity filter is checked.
+
+
